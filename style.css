@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f5f7fa, #0d51be);
+}
+
+.Calculator {
+    border: 1px solid #d9d0d0;
+    background: rgba(224, 216, 218, 0.808);
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(242, 236, 236, 0.1);
+    padding: 20px;
+    width: 500px;
+    height: 700px;
+}
+
+.Calculator input {
+    width: 100%;
+    height: 60px;
+    font-size: 2em;
+    text-align: right;
+    border: thin solid #d9d0d0;
+    outline: none;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 5px rgba(14, 13, 13, 0.926);
+}
+
+.Calculator .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.Calculator button {
+    padding: 15px;
+    font-size: 1.5em;
+    border: none;
+    width: 75px;
+    height: 60px;
+    margin: 17px;
+    border-radius: 20px;
+    background: rgba(203, 191, 203, 0.773);
+    cursor: pointer;
+    box-shadow: -8px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.Calculator button:hover {
+    background: #e0e0e0;
+}
+
+.equalBtn {
+    background-color: #fb7c14;
+}
+.operator {
+    color: rgb(89, 9, 249);
+}
